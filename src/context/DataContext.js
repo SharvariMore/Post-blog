@@ -1,7 +1,7 @@
 import {createContext, useState, useEffect} from 'react';
 import useAxiosFetch from '../Hooks/useAxiosFetch';
 
-const DataContext = createContext();
+const DataContext = createContext({});
 
 export const DataProvider = ({children}) => {
   const [posts, setPosts] = useState([])
